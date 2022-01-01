@@ -1,6 +1,7 @@
 import './index.css';
 import Login from './components/login';
 import Alerts from './components/alerts';
+import Loading from './components/loading';
 import { useState } from 'react'
 import axios from 'axios';
 
@@ -9,11 +10,12 @@ function App() {
   const [alerts, setAlerts] = useState([])
   const [showAlert, setShowAlert] = useState(false)
   const [showLogin, setShowLogin] = useState(true)
- 
-  //testi
+  const [showLoading, setShowLoading] = useState(false)
+
   const getAlerts = () => {
 
     setShowLogin(false)
+    setShowLoading(true)
 
     axios.get("https://raspberry-api.herokuapp.com/api/alerts")
     .then(res => {
@@ -21,6 +23,7 @@ function App() {
       setAlerts(res.data)
 
       console.log(res.data)
+      setShowLoading(false)
       setShowAlert(true)
     })
     .catch(error => {
@@ -28,7 +31,6 @@ function App() {
       alert(alertMessage)
       console.log(error)
     })
-
   }
 
   const logout = () => {
@@ -53,7 +55,7 @@ function App() {
     <div className="App">
       {showLogin ? <Login onPress={getAlerts}/> : null}
       {showAlert ? <Alerts updateClick={getAlerts} handleClick={logout} alerts={alerts} onDelete={deleteAlert}/> : null}
-
+      {showLoading ? <Loading/> : null}
     </div>
   );
 }
