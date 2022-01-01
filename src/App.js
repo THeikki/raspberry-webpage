@@ -10,6 +10,7 @@ function App() {
   const [showAlert, setShowAlert] = useState(false)
   const [showLogin, setShowLogin] = useState(true)
  
+  //testi
   const getAlerts = () => {
 
     setShowLogin(false)
