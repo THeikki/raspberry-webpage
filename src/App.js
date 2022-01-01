@@ -13,7 +13,6 @@ function App() {
   const [showLoading, setShowLoading] = useState(false)
 
   const getAlerts = () => {
-
     setShowLogin(false)
 
     if(!showAlert) {
