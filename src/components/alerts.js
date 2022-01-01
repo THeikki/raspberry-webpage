@@ -10,7 +10,6 @@ const Alerts = ({ alerts, onDelete, handleClick, updateClick }) => {
                 <hr className="hr"></hr>
                 <div className="noAlertComponent">
                     <p>Ei hälytyksiä</p>
-
                 </div>
                 
             </div>
