@@ -15,10 +15,8 @@ function App() {
   const getAlerts = () => {
     setShowLogin(false)
 
-    if(!showAlert) {
-      setShowLoading(true)
-
-    }
+    
+    setShowLoading(true)
 
     axios.get("https://raspberry-api.herokuapp.com/api/alerts")
     .then(res => {
@@ -38,6 +36,7 @@ function App() {
 
   const logout = () => {
     setShowAlert(false)
+    setShowLoading(false)
     setShowLogin(true)
     console.log("KIRJAUDUIT ULOS")
   }

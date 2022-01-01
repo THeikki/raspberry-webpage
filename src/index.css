@@ -29,6 +29,20 @@ code {
   border-radius: 4px;
 }
 
+.loadingComponent {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .alertComponent {
   background-color: rgb(240, 144, 176);
   text-align: center;
