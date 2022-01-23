@@ -1,7 +1,7 @@
 const Loading = () => {
     return(
         <div className="loadingComponent">
-            <p>Ladataan tietoja...</p>
+            <p class="loadingText">Ladataan tietoja...</p>
         </div>
     )
 }
