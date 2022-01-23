@@ -132,3 +132,8 @@ code {
   background-color: rgb(129, 224, 51);
   cursor: pointer;
 }
+p {
+ text-align: center;
+ margin-top: auto;
+ margin-bottom: auto;
+}
