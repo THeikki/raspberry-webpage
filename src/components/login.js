@@ -6,7 +6,7 @@ const Login = ({ onPress }) => {
 
     const checkIfValid = (e) => {
         e.preventDefault()
-//Testi
+
         const usernameCorrect = "omistaja"
         const passwordCorrect = "Salasana"
 
