@@ -15,7 +15,7 @@ function App() {
   const getAlerts = () => {
     setShowLogin(false)
     setShowLoading(true)
-    //Testi
+    
     axios.get("https://raspberry-api.herokuapp.com/api/alerts")
     .then(res => {
       
