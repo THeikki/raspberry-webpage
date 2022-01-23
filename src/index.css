@@ -133,9 +133,6 @@ code {
   cursor: pointer;
 }
 .loadingText {
-  height: 10em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+  text-align: center;
+  top: 50;
 }
