@@ -3,7 +3,7 @@ import { useState } from "react"
 const Login = ({ onPress }) => {
     const [user, setUserName] = useState("")
     const [password, setPassword] = useState("")
-//gdfgdf
+
     const checkIfValid = (e) => {
         e.preventDefault()
 
