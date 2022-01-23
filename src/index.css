@@ -132,8 +132,3 @@ code {
   background-color: rgb(129, 224, 51);
   cursor: pointer;
 }
-.loadingText {
-  text-align: center;
-  margin-top: 500px;
-  margin: 0;
-}
