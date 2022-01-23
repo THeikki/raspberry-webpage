@@ -134,5 +134,5 @@ code {
 }
 .loadingText {
   text-align: center;
-  top: 100;
+  margin-top: 50%;
 }

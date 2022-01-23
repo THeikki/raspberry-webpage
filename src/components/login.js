@@ -22,7 +22,7 @@ const Login = ({ onPress }) => {
             
         }
     }
-//Testi
+
     return (
         <div className="loginComponent">
             <div>
