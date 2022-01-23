@@ -50,7 +50,6 @@ function App() {
       console.log(error)
     })
   }
-//Testi
   return (
     <div className="App">
       {showLogin ? <Login onPress={getAlerts}/> : null}
