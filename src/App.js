@@ -11,7 +11,7 @@ function App() {
   const [showAlert, setShowAlert] = useState(false)
   const [showLogin, setShowLogin] = useState(true)
   const [showLoading, setShowLoading] = useState(false)
-
+  //Testi
   const getAlerts = () => {
     setShowLogin(false)
     setShowLoading(true)
