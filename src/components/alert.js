@@ -29,8 +29,10 @@ const Alert = ({ onDelete, alert }) => {
                     </tr> 
                 </thead>
                     
-            </table>    
-            <img className="picture" src={`data:image/jpg;base64,${alert.picture}`} alt=""/>
+            </table>  
+            <div className="picture">
+                <img className="picture" src={`data:image/jpg;base64,${alert.picture}`} alt=""/>
+            </div>  
             <button className="deleteButton" onClick={() => onDelete(alert._id)}> Poista </button>
         </div>
     )
