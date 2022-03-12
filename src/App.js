@@ -38,8 +38,7 @@ function App() {
     setShowLogin(true)
     console.log("KIRJAUDUIT ULOS")
   }
-  //iuty
-//testi
+  
   const deleteAlert = (id) => {
     axios.delete("https://raspberry-api.herokuapp.com/api/alerts/" + id)
     .then(res => {
