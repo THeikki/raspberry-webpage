@@ -30,9 +30,9 @@ const Alert = ({ onDelete, alert }) => {
                 </thead>
                     
             </table>    
-            <a target="_blank" href="data:image/jpg;base64" rel="noreferrer">
+            <div >
                 <img className="picture" src={`data:image/jpg;base64,${alert.picture}`} alt=""/>
-            </a>
+            </div>
             
             <button className="deleteButton" onClick={() => onDelete(alert._id)}> Poista </button>
         </div>
