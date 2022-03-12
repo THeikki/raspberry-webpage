@@ -30,7 +30,7 @@ const Alert = ({ onDelete, alert }) => {
                 </thead>
                     
             </table>    
-            <a target="_blank" href={`data:image/jpg;base64,${alert.picture}`} rel="noreferrer">
+            <a href={`data:image/jpg;base64,${alert.picture}`} rel="noreferrer">
                 <img className="picture" src={`data:image/jpg;base64,${alert.picture}`} alt=""/>
             </a>
             
